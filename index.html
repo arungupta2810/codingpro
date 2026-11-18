@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fc">
+  <title>Mid-Semester Examination Marks | BMCET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell container-fluid p-0">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="BMCET Marks Dashboard home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 16V9m4 7V5m4 11v-4m4 4V8"/></svg>
+        </span>
+        <span class="brand-copy">
+          <strong>BMCET</strong>
+          <small>ACADEMIC PORTAL</small>
+        </span>
+      </a>
+      <div class="topbar-right">
+        <span class="session-label"><span class="status-dot"></span> Academic Session 2026–27</span>
+        <span class="institution-avatar" aria-hidden="true">B</span>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <section class="page-heading" aria-labelledby="page-title">
+        <div class="heading-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> EXAMINATION MANAGEMENT</div>
+          <h1 id="page-title">Mid-Semester Examination <span>Marks</span></h1>
+          <p class="page-subtitle">B.Tech &amp; BCA <span class="subtitle-separator">•</span> Mid-Semester Examination Attendance Sheet – October 2026</p>
+        </div>
+        <div class="exam-badge">
+          <span class="calendar-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7.5 3v4M16.5 3v4M4 9.5h16"/></svg>
+          </span>
+          <span><strong>OCTOBER 2026</strong><small>EXAMINATION PERIOD</small></span>
+        </div>
+      </section>
+
+      <div class="notice-strip" role="note">
+        <span class="notice-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>
+        </span>
+        <span>Blank subject cells are shown as not entered. Marks, totals and percentages are transcribed from the October 2026 examination sheet.</span>
+      </div>
+
+      <section class="stats-grid" aria-label="Examination statistics">
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-label">Total Students</span><span class="stat-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20m5.5-9a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8-7.5a4 4 0 0 1 0 7.7m2.5 4.3a4 4 0 0 1 2 3.5V20"/></svg></span></div>
+          <div class="stat-value" id="stat-total">—</div><div class="stat-foot">Enrolled for this examination</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-label">Average Percentage</span><span class="stat-icon icon-violet" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 15l4-4 3 2 5-6"/></svg></span></div>
+          <div class="stat-value" id="stat-average">—</div><div class="stat-foot">Across all student results</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-label">Highest Percentage</span><span class="stat-icon icon-green" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></span></div>
+          <div class="stat-value" id="stat-highest">—</div><div class="stat-foot">Top student performance</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-label">Students Above 75%</span><span class="stat-icon icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span></div>
+          <div class="stat-value" id="stat-above">—</div><div class="stat-foot">Very good and excellent</div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-label">Students Below 40%</span><span class="stat-icon icon-amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 9v4m0 4h.01M10.3 4.5 2.8 17.4A1.8 1.8 0 0 0 4.4 20h15.2a1.8 1.8 0 0 0 1.6-2.6L13.7 4.5a2 2 0 0 0-3.4 0Z"/></svg></span></div>
+          <div class="stat-value" id="stat-below">—</div><div class="stat-foot">Requires academic attention</div>
+        </article>
+      </section>
+
+      <section class="students-section" aria-labelledby="students-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-title-row"><h2 id="students-title">Student directory</h2><span class="count-pill" id="visible-count">0 students</span></div>
+            <p>Browse and select a student to view their detailed marksheet.</p>
+          </div>
+          <div class="results-context"><span class="context-dot"></span> October 2026 results</div>
+        </div>
+
+        <form class="toolbar" id="filter-form" role="search" onsubmit="return false">
+          <label class="search-control" for="student-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg>
+            <input id="student-search" type="search" placeholder="Search name, enrollment or course..." autocomplete="off">
+            <kbd>⌘ K</kbd>
+          </label>
+          <label class="select-control"><span class="visually-hidden">Filter by course</span>
+            <select id="course-filter"><option value="">All courses</option></select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+          </label>
+          <label class="select-control"><span class="visually-hidden">Filter by performance</span>
+            <select id="performance-filter">
+              <option value="">All performance</option><option>Excellent</option><option>Very Good</option><option>Good</option><option>Average</option><option>Needs Improvement</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+          </label>
+          <label class="select-control range-select"><span class="visually-hidden">Filter by percentage range</span>
+            <select id="range-filter">
+              <option value="">Any percentage</option><option value="90">90% and above</option><option value="75">75% – 89.99%</option><option value="60">60% – 74.99%</option><option value="40">40% – 59.99%</option><option value="0">Below 40%</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+          </label>
+          <label class="select-control sort-select"><span class="visually-hidden">Sort students</span>
+            <select id="sort-select">
+              <option value="source">Order from marksheet</option><option value="name-asc">Name: A–Z</option><option value="name-desc">Name: Z–A</option><option value="percentage-desc">Highest percentage</option><option value="percentage-asc">Lowest percentage</option><option value="marks-desc">Highest total marks</option><option value="marks-asc">Lowest total marks</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+          </label>
+        </form>
+
+        <div class="student-grid" id="student-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4M8 11h6"/></svg></span>
+          <h3>No students found</h3><p>Try adjusting your search or filters to find what you’re looking for.</p>
+          <button type="button" class="btn-reset" id="reset-filters">Clear all filters</button>
+        </div>
+        <div class="directory-footer"><span>Showing <strong id="footer-count">0</strong> student results</span><span>Click a student card to view marksheet <span aria-hidden="true">↗</span></span></div>
+      </section>
+      <footer class="page-footer"><span>© 2026 BMCET Academic Portal</span><span>Secure examination records <span class="footer-lock" aria-hidden="true">◆</span></span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop-custom" id="result-backdrop" hidden></div>
+  <section class="result-modal" id="result-modal" role="dialog" aria-modal="true" aria-labelledby="modal-student-name" aria-hidden="true" hidden>
+    <div class="modal-panel" role="document">
+      <div class="modal-toolbar">
+        <div class="modal-brand"><span class="brand-mark mini" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 16V9m4 7V5m4 11v-4m4 4V8"/></svg></span><span>BMCET <small>RESULTS</small></span></div>
+        <div class="modal-actions-top">
+          <button class="icon-button" id="print-result" type="button" aria-label="Print marksheet" title="Print marksheet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"/><path d="M7 14h10v7H7z"/></svg></button>
+          <button class="icon-button close-modal" type="button" aria-label="Close result" title="Close result"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 6-12 12M6 6l12 12"/></svg></button>
+        </div>
+      </div>
+      <div class="modal-content-wrap" id="printable-result">
+        <div class="result-heading">
+          <div class="result-identity">
+            <span class="student-avatar modal-avatar" id="modal-avatar"></span>
+            <div><div class="modal-kicker">STUDENT EXAMINATION RESULT</div><h2 id="modal-student-name"></h2><p id="modal-enrollment"></p></div>
+          </div>
+          <span class="performance-badge" id="modal-performance"></span>
+        </div>
+        <div class="result-meta">
+          <div><span>COURSE</span><strong id="modal-course"></strong></div>
+          <div><span>EXAMINATION</span><strong>Mid-Semester Examination</strong></div>
+          <div><span>SESSION</span><strong>October 2026 · 2026–27</strong></div>
+        </div>
+        <div class="result-stat-grid">
+          <article class="result-stat primary-result-stat"><span>Total Marks</span><strong><b id="modal-total"></b><small> / 130</small></strong><span class="stat-caption">Total obtained</span></article>
+          <article class="result-stat"><span>Overall Percentage</span><strong id="modal-percent"></strong><span class="stat-caption">Aggregate score</span></article>
+          <article class="result-stat"><span>Subjects With Marks</span><strong id="modal-appeared"></strong><span class="stat-caption">Out of 8 subjects</span></article>
+          <article class="result-stat"><span>Highest Subject Marks</span><strong id="modal-highest"></strong><span class="stat-caption" id="modal-highest-subject"></span></article>
+        </div>
+        <div class="marksheet-heading"><div><div class="eyebrow">ACADEMIC BREAKDOWN</div><h3>Subject-wise marksheet</h3></div><span class="marksheet-note">Overall maximum: 130 · Bars compare marks within this class</span></div>
+        <div class="table-responsive">
+          <table class="marksheet-table">
+            <thead><tr><th scope="col">#</th><th scope="col">Subject Name</th><th scope="col">Marks Obtained</th><th scope="col">Relative score</th></tr></thead>
+            <tbody id="marksheet-body"></tbody>
+          </table>
+        </div>
+        <div class="result-summary">
+          <div><span>Total Obtained Marks</span><strong id="summary-total"></strong></div>
+          <div><span>Maximum Marks</span><strong>130</strong></div>
+          <div><span>Overall Percentage</span><strong id="summary-percent"></strong></div>
+          <div class="summary-category"><span>Performance Category</span><strong id="summary-category"></strong></div>
+        </div>
+        <div class="signature-row"><div><span class="signature-line"></span><small>Controller of Examinations</small></div><div><span class="signature-line"></span><small>Authorized Signatory</small></div></div>
+        <div class="marksheet-disclaimer">This is a computer-generated marksheet. Verify all entries with the institution before official use.</div>
+      </div>
+      <div class="modal-bottom-actions">
+        <button type="button" class="btn-close-result close-modal">Close Result</button>
+        <div><button type="button" class="btn-print" id="print-result-bottom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg> Print Marksheet</button><button type="button" class="btn-download" id="download-result"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg> Download PDF</button></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toast-message" id="toast-message" role="status" aria-live="polite" hidden></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
